@@ -1,0 +1,7 @@
+version: '2.2'
+
+services:
+  inco:
+    build: ./
+    ports:
+        - "10007:10007"

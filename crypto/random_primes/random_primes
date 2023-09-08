@@ -1,0 +1,13 @@
+service random_primes
+{
+	disable     = no
+	type        = UNLISTED
+	wait        = no
+	server      = /usr/bin/python3
+    server_args = /root/random_primes.py
+	socket_type = stream
+	protocol    = tcp
+	user        = root
+	port	    = 10007
+	flags       = REUSE
+}

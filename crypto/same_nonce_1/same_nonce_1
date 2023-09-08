@@ -1,0 +1,13 @@
+service same_nonce_1
+{
+	disable     = no
+	type        = UNLISTED
+	wait        = no
+	server      = /usr/bin/python3
+    server_args = /root/same_nonce_1.py
+	socket_type = stream
+	protocol    = tcp
+	user        = root
+	port	    = 10005
+	flags       = REUSE
+}
