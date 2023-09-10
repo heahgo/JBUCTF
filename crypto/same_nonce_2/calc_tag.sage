@@ -1,7 +1,6 @@
 # SageMath version 10.0
 #
 # Installation Guide : https://doc.sagemath.org/html/en/installation/index.html
-# sage -n jupyter
 
 def pad(x):
     return x + '00' * ((16-(len(x)//2)%16)%16)
@@ -19,7 +18,7 @@ def hex2poly(hexx, x):
 F, a = GF(2^128, name="a", modulus=x^128 + x^7 + x^2 + x + 1).objgen()
 H = PolynomialRing(F, name="H").gen()
 
-# exploit1.py output
+# exploit.py output
 #
 c1 = 'ad163689d664241d4b33e82a060f38347117004c3ddb9f3adc6a27ec'
 t1 = '407fae2ac3b9cc87f77ee29393622097'
@@ -27,7 +26,7 @@ c2 = 'a523ae1ebc1cbdf2b4c8e3b8bed3dc7eb9c170c7296c65'
 t2 = 'd1b4367b30af865a2333b232866362ef'
 c3 = '302e84eae1c92b98546a4c28450cc9485067339b7cb7b00d4bb4c19d000e215efdd3394c5223c9057d'
 #
-# exploit1.py output
+# exploit.py output
 
 A = ''# aad
 l1= length(A, c1)
