@@ -1,6 +1,6 @@
-# SageMath version 10.0
+# SageMath version 10.1
 #
-# Installation Guide : https://doc.sagemath.org/html/en/installation/index.html
+# Installation Guide : https://github.com/sagemath/sage
 
 def pad(x):
     return x + '00' * ((16-(len(x)//2)%16)%16)
