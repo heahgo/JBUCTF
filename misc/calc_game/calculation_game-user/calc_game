@@ -1,0 +1,13 @@
+service calc_game
+{
+	disable     = no
+	type        = UNLISTED
+	wait        = no
+	server      = /usr/bin/python3
+    server_args = /root/calc_game.py
+	socket_type = stream
+	protocol    = tcp
+	user        = root
+	port	    = 10004
+	flags       = REUSE
+}

@@ -1,0 +1,13 @@
+service slide
+{
+	disable     = no
+	type        = UNLISTED
+	wait        = no
+	server      = /usr/bin/python3
+    server_args = /root/slide.py
+	socket_type = stream
+	protocol    = tcp
+	user        = root
+	port	    = 10008
+	flags       = REUSE
+}

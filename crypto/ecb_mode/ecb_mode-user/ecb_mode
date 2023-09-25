@@ -1,0 +1,13 @@
+service ecb_mode
+{
+	disable     = no
+	type        = UNLISTED
+	wait        = no
+	server      = /usr/bin/python3
+    server_args = /root/ecb_mode.py
+	socket_type = stream
+	protocol    = tcp
+	user        = root
+	port	    = 10009
+	flags       = REUSE
+}

@@ -1,0 +1,13 @@
+service baskin_robbins
+{
+	disable     = no
+	type        = UNLISTED
+	wait        = no
+	server      = /usr/bin/python3
+  server_args = /root/baskin_robbins.py
+	socket_type = stream
+	protocol    = tcp
+	user        = root
+	port	    = 10002
+	flags       = REUSE
+}
